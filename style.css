@@ -28,28 +28,20 @@ body {
   align-items: center;
 }
 
-.header__button {
+
+button {
   width: 40px;
   height: 40px;
   border-radius: 20px;
   background-color: #ff3e79;
+  border: 0;
 }
 
-button {
-  background: none;
-  border: none;
-  padding: 0;
-}
-
-.header__button:active {
+button:active {
   background: #41f6d7;
 }
 
-.main__header__button:active {
-  background: #41f6d7;
-}
-
-.header__button img {
+button img {
   margin: auto;
   display: block;
 }
@@ -76,23 +68,28 @@ button {
   display: none;
 }
 
-.header__button__repair {
+.button__repair {
   margin-right: 16px;
 }
 
-.header__button__call {
+.button__call {
   display: none;
   margin-left: auto;
   margin-right: 16px;
 }
 
-.header__button__chat {
+.button__chat {
   display: none;
   margin-right: 16px;
 }
 
-.header__button__profile {
+.button__profile {
   display: none;
+}
+
+
+.main__header  > button {
+display: none;
 }
 /* шапка сайта с сервисами */
 
@@ -138,17 +135,6 @@ button {
   margin-right: 9px;
   display: none;
 }
-.main__header__button {
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  background-color: #ff3e79;
-  display: none;
-}
-
-.main__header__button img {
-  padding: auto;
-}
 
 /* ГОЛОВА САЙТА НА РАЗРЕШЕНИИ 1120РХ */
 
@@ -179,67 +165,48 @@ button {
   border: 2px solid #41f6d7;
 }
 
-.nav__button-1 {
+.nav__button-divaces {
   width: 220px;
   padding: 8px 9.3px 8px 16.54px;
   border-radius: 6px;
 }
 
-.nav__button-2 {
+.nav__button-additional-services {
   width: 211px;
   padding: 8px 10px 8px 16px;
   border-radius: 6px;
 }
 
-.nav__button-3 {
-  width: 118px;
+.nav__button-spec-price {
+  width: 170px;
   padding: 8px 19px 8px 15px;
   border-radius: 6px;
 }
 
-.nav__button-4 {
-  width: 162px;
+.nav__button-price {
+  width: 118px;
   padding: 8px 17px 8px 12px;
   border-radius: 6px;
 }
 
-.nav__button-5 {
+.nav__button-addresses {
   width: 233px;
   padding: 8px 4px 8px 12px;
   border-radius: 6px;
 }
 
-.nav__button-6 {
+.nav__button-brends {
   padding: 8px 21.7px 8px 25px;
   border-radius: 6px;
   display: none;
 }
 
-.nav__button-7 {
+.nav__button-reviews {
   border-radius: 6px;
   width: 95px;
   padding: 8px 18.5px 8px 18.5px;
   margin-left: 10px;
 }
-
-.nav button:hover {
-  border: 2px #b8ffec solid;
-}
-
-/* .nav button:focus {
-  outline: 0;
-  outline-offset: 0;
-  border: 2px #b8ffec solid;
-  /* border-radius: 6px; */
-
-/* button:focus {
-  background: #ffffff;
-  border: 2px #b8ffec solid;
-}
-
-
-/* 
-/* СКРОЛ БАР */
 
 /* СЕКЦИЯ ТЕКСТА С КАРТИНКОЙ */
 .section-main {
@@ -247,9 +214,6 @@ button {
   flex-direction: column;
   margin-top: 24px;
   height: 100%;
-  /* border: 1px red solid; */
-  /* width: 320px;
-    height: 322px; */
 }
 
 .section-main__wrapper {
@@ -279,22 +243,21 @@ button {
 
 .section-main__button {
   font-family: "TTLakes-Medium";
-  padding: 0;
-  border: none;
-  color: inherit;
-  background-color: transparent;
+
+  
+  
+  background:none;
   cursor: pointer;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
   color: #1b1c21;
-  max-width: 150px;
-  max-height: 24px;
   margin-bottom: 16px;
   margin-top: 16px;
   margin-left: 16px;
   display: flex;
   align-items: center;
+  width: auto;
 }
 
 .section-main__text_pharagraph2 {
@@ -303,12 +266,12 @@ button {
 
 /* ТЕЛО САЙТА */
 @media (min-width: 769px) {
-  .header__button__logo {
+  .header__logo {
     margin: 0;
   }
-  .header__button__call,
-  .header__button__chat,
-  .header__button__profile,
+  .button__call,
+  ._button__chat,
+  .button__profile,
   .divider-left {
     display: block;
   }
@@ -360,7 +323,7 @@ button {
     height: 383.24px;
   }
 
-  .nav__button-7 {
+  .nav__button-reviews {
     display: block;
     order: 1;
   }
@@ -369,16 +332,16 @@ button {
     flex-wrap: wrap;
   }
 
-  .nav__button-6 {
+  .nav__button-brends {
     display: block;
     order: -1;
   }
 
-  .nav__button-4 {
+  .nav__button-spec-price {
     order: 1;
   }
 
-  .nav__button-2 {
+  .nav__button-additional-services {
     display: none;
   }
 
@@ -397,7 +360,8 @@ button {
     margin-top: 20px;
   }
 
-  .main__header__button {
+  .main__header  > button {
     display: block;
-  }
+    }
+
 }

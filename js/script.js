@@ -1,5 +1,5 @@
-
-const navButtons = document.querySelectorAll('.nav__button');
+const nav = document.querySelector('nav');
+const navButtons = nav.querySelectorAll('a');
 
 
 navButtons.forEach((btn) => {
